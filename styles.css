@@ -1,0 +1,513 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* h1 {
+	text-align: center;
+} */
+
+/* Navigation bar */
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-color: #414141;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	padding: 8px 10px;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+}
+
+li a:hover {
+	background-color: #66d5f7;
+	opacity: 0.8;
+}
+
+li .logo {
+	position: relative;
+	background-color: #414141;
+	padding: 5px;
+	margin: 5px;
+	width: 200px;
+	height: 50px;
+}
+
+/* Style for all paragraphs */
+p {
+	font-family: 'Lato', sans-serif;
+}
+
+/* h1 Junkyard */
+.maincontent h1 {
+	margin-top: 120px;
+	font-size: 30px;
+}
+
+/* Images and gif grid mainpage */
+.container {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-gap: 15px;
+	margin: 100px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.main {
+	background-color: #fff;
+	color: #fff;
+	display: flex;
+	/* justify-content: center;
+	align-items: center; */
+}
+
+.container .uno {
+	grid-column: span 1;
+	grid-row: span 4;
+	background-image: url(images/2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.container .dos {
+	grid-column: 2 / span 1;
+	grid-row: span 4;
+	background-image: url(images/1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.container .tres {
+	grid-column: span 3;
+	grid-row: span 3;
+	background-image: url(images/giphy.gif);
+	background-size: cover;
+	background-position: center;
+}
+
+.container .cuatro {
+	grid-column: span 1;
+	grid-row: span 1;
+	background-image: url(images/4.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.container .cinco {
+	grid-column: 4 / span 2;
+	grid-row: 4 / span 3;
+	background-image: url(images/jackets.jpg);
+	background-size: cover;
+	background-position: top;
+}
+
+.container .seis {
+	grid-column: span 3;
+	grid-row: 5 / span 2;
+	background-image: url(images/brands.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/* Newsfeed flexbox*/
+.limited {
+	text-transform: uppercase;
+}
+
+.flex-container {
+	display: flex;
+	background-color: #fff;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.news {
+	background-color: #ffc0cb;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	padding: 20px;
+	font-size: 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+figcaption {
+	font-size: 10px;
+	position: bottom;
+}
+
+figcaption h2 {
+	text-transform: uppercase;
+	margin: 5px;
+}
+
+figcaption p {
+	margin: 5px;
+}
+
+.shoes1 {
+	background-image: url(images/s1.jpg);
+	background-size: cover;
+}
+
+.shoes2 {
+	background-image: url(images/s2.jpg);
+	background-size: cover;
+}
+
+.shoes3 {
+	background-image: url(images/s3.jpg);
+	background-size: cover;
+}
+
+.shoes4 {
+	background-image: url(images/s4.jpg);
+	background-size: cover;
+}
+
+.shoes5 {
+	background-image: url(images/s5.jpg);
+	background-size: cover;
+}
+
+.shoes6 {
+	background-image: url(images/s6.jpg);
+	background-size: cover;
+}
+
+.shoes7 {
+	background-image: url(images/s7.jpg);
+	background-size: cover;
+}
+
+.shoes8 {
+	background-image: url(images/s8.jpg);
+	background-size: cover;
+}
+
+/* Footer */
+footer {
+	font-size: 14px;
+	color: #ffffff;
+}
+
+footer a {
+	color: #ffffff;
+}
+
+.mainbox {
+	display: flex;
+	background-color: #000000;
+	flex-flow: row wrap;
+	grid-gap: 10px;
+	justify-content: space-between;
+}
+
+.foot {
+	background-color: #f0c0ff;
+	margin: 10px;
+	padding: 10px;
+	width: 30%;
+	height: 150px;
+}
+
+.foot h2 {
+	font-size: 20px;
+	line-height: 1;
+	padding: 0px;
+	margin: 0px;
+}
+.foot p {
+	font-size: 13px;
+	line-height: 1;
+}
+
+.left {
+	background-color: #000000;
+}
+
+.middle {
+	background-color: #000000;
+}
+.bottom {
+	background-color: #000000;
+	color: #ffffffa9;
+	width: 100%;
+	height: 10px;
+	text-align: center;
+}
+
+.right {
+	background-color: #000000;
+}
+
+.googlemaps {
+	float: right;
+	width: 300px;
+	height: 200px;
+	border: none;
+}
+
+/* Responsive grid */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+#grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	padding: 20px;
+	background-color: #ffffff;
+}
+
+/* Image doesn't get bigger than its original size */
+/* img {
+	display: grid;
+	max-width: 300px;
+	height: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
+/* Gallery css with grid */
+/* *,*::before,*::after {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+} */
+.wrapper {
+	display: grid;
+	background-color: #fff;
+	width: 900px;
+	max-width: 100%;
+	height: 90vh;
+	margin: 25px auto;
+	grid-gap: 5px;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+}
+
+.box {
+	background-color: #a3fdf5;
+	/* background-size: cover; */
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.box.one {
+	grid-column: span 3;
+	grid-row: span 3;
+	background-image: url(images/couple.jpg);
+}
+
+.box.two {
+	grid-column: span 2;
+	grid-row: span 2;
+	background-image: url(images/shoes1.jpg);
+}
+
+.box.three {
+	grid-column: 1 / span 2;
+	grid-row: 4 / span 3;
+	background-image: url(images/bartsimpson.jpg);
+}
+
+.box.four {
+	grid-column: 3 / span 1;
+	grid-row: 4 / span 1;
+	background-image: url(4.jpg);
+}
+
+.box.five {
+	grid-column: 4 / span 2;
+	grid-row: 3 / span 2;
+	background-image: url(5.jpg);
+}
+
+.box.six {
+	grid-column: span 3;
+	grid-row: span 2;
+	background-image: url(6.jpg);
+}
+
+/* Contact form */
+.form {
+	border-radius: 2px;
+	padding: 20px;
+	margin: 20px;
+}
+input[type=text] {
+	width: 50%;
+	padding: 10px 20px;
+	margin: 10px;
+	box-sizing: border-box;
+	border-radius: 2px;
+	border: 1px solid #94c9c5;
+	outline: none;
+}
+
+input[type=text]:focus {
+	border: 1px solid #678b88;
+}
+
+input[type=submit] {
+	background-color: #414141;
+	border: none;
+	color: #fff;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	outline: none;
+	/* cursor: pointer; */
+}
+
+input[type=submit]:hover {
+	background-color: #1b1b1b;
+}
+
+.backimg {
+	width: 100%;
+	height: 90vh;
+	background-image: url("images/neon.jpg");
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: center;
+	background-color: #b5b5ff;
+}
+
+/* ABOUT.HTML CSS STYLING */
+
+/* COVER BACKGROUND */
+.menuabout {
+	background-color: #000000;
+	border-bottom: 2px solid #36fbda;
+}
+
+.junkyard-logo {
+	margin: 20px 10px 10px 20px;
+}
+
+ul {
+	text-align: center;
+}
+
+li a {
+	display: block;
+	padding: 8px 50px;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+}
+
+li a:hover {
+	background-color: #36fbda;
+	opacity: 0.9;
+	font-weight: bold;
+}
+
+.cover {
+	display: flex;
+	flex-wrap: wrap;
+	background-color:#000000;
+	margin: 0px;
+	padding: 0px;
+	justify-content: space-between;
+}
+
+.back {
+	width: 30%;
+	color:#fff;
+	height: 100vh;
+}
+
+.cover1 {
+	background-image: url(images/ellesse.jpg);
+	background-size: cover;
+}
+
+.cover2 {
+	color: #aba0e1;
+	text-align: center;
+	text-transform: uppercase;
+	align-items: center;
+	justify-content: center;
+}
+
+.cover2 h1 {
+	font-size: 50px;
+	margin-top: 200px;
+}
+
+.cover2 p {
+	font-size: 35px;
+	text-align: center;
+	justify-content: center;
+	font-style: italic;
+}
+
+.cover3 {
+	background-image: url(images/ellesse1.jpg);
+	background-size: cover;
+}
+
+.limitednews {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+
+hr {
+	width: 300px;
+	margin-bottom: 15px;
+	border: 1px solid #36fbda;
+}
+
+.left h2 {
+	text-align: center;
+}
+.icons {
+	width: 50px;
+	margin: 10px;
+}
+
+.brands {
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.brand {
+	width: 70px;
+	margin: 20px;
+	margin-top: -10px;
+}
+
