@@ -7,39 +7,74 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<link href="css/all.css" rel="stylesheet">
 </head>
 
 <body>
+<!--NAVIGATION BAR  -->
 	<nav>
-		<ul class="navbar">
+		<ul>
+			<li><img class="junkyard-logo" src="images/logotype.jpg" width="100px"></li>
 			<li><a href="./index.html"><p>Startsida</p></a></li>
-			<li><a href="./contact.html"><p>Kontakta oss</p></a></li>
 			<li><a href="./gallery.html"><p>Galleri</p></a></li>
-			<li><a href="./valfri.html"><p>Valfri</p></a></li>
+			<li><a href="./contact.html"><p>Kontakta oss</p></a></li>
+			<li><a href="./about.html"><p>Om oss</p></a></li>
 		</ul>
 	</nav>
-	<br>
-	<br>
-	<br>
-	<br>
+
+<!-- CONTACT FORM -->
 	<div class="form">
-		<form>
-			Namn: <br>
-			<input requiered type="text" name="name" value="first name + last name"><br>
-			E-postadress: <br>
-			<input requiered type="text" name="email" value="email"><br>
-			Ämne: <br>
-			<input requiered type="text" name="your message" value="message"><br>
+		<h1>Kontaktformulär</h1>
+		<form action="http://www.somesite.com/somedoc" method="get">
+			<p>Namn:</p> <br>
+			<input type="text" name="name" placeholder="För- och efternamn"><br>
+			<p>E-postadress:</p> <br>
+			<input type="text" name="email" placeholder="Din e-postadress"><br>
+			<p>Ämne:</p> <br>
+			<textarea placeholder="Skriv ditt meddelande här..." name="comments" cols="30" rows="5"></textarea><br>
 			<br>
 			<input type="submit" value="Skicka in">
 		</form>
 	</div>
 
+<!-- FOOTER -->
 	<footer>
-		<p>Copyright &copy; 2019 Junkyard</p>
-		<p>Telefon: 010-510 05 00</p>
-		<p>Telefontider: Vardagar: 09.00 - 13.00</p>
-		<a href="./contact.html"><p>Kontakta oss »</p></a>
+			<div class="mainbox">
+<!-- Left box with social media icons -->
+			<div class="foot left">
+				<h2>Följ oss:</h2>
+				<span class="icons">
+					<a href="https://www.facebook.com/junkyard/" target="_blank"> 
+						<i class="fab fa-facebook-f fa-2x" alt="Junkyard's Facebook"></i></a>
+					<a href="https://www.instagram.com/junkyardcom/" target="_blank">
+						<i class="fab fa-instagram fa-2x" alt="Junkyard's Instagram"></i></a>
+					<a href="https://www.youtube.com/user/junkyard" target="_blank">
+				<i class="fab fa-youtube fa-2x" alt="Junkyard's Youtube"></i></a>
+				</span>	
+			</div>
+
+<!-- Middle box with contact info -->
+			<div class="foot middle">
+				<h2>Kontakta oss:</h2>
+				<p><b>Telefon:</b> 010-510 05 00</p>
+				<p><b>Telefontider:</b> Vardagar: 09.00 - 13.00</p>
+				<p><b>Besöksadress:</b> Gamla brogatan 26,	111 22 Stockholm</p>
+				<p><b>Öppettider:</b><br>
+					Vardagar: 10-19<br>
+					Lördag: 11-17<br>
+					Söndag: 11-17</p>
+			</div>
+
+<!-- Left box with google maps -->
+			<div class="foot right">
+					<iframe class="googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1017.4627457124891!2d18.05872705789002!3d59.33419777134347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d674632c47d%3A0x5ceb91ab05d7ce9b!2sGamla%20Brogatan%2026%2C%20111%2020%20Stockholm!5e0!3m2!1ssv!2sse!4v1568400804472!5m2!1ssv!2sse" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			</div>
+
+<!-- Bottom box with copyright -->
+			<div class="foot bottom">
+				<small><p>&copy; 2019 Junkyard AB. All rights reserved.</p><small>
+			</div>
+		</div>
 	</footer>
 </body>
 </html>

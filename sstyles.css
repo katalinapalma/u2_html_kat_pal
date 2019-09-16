@@ -3,7 +3,6 @@ body {
 	padding: 0px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 }
 
 p {
@@ -11,20 +10,13 @@ p {
 }
 
 /* _____________________________ */
-/* MAIN PAGE */
 /* NAVIGATION BAR */
-.junkyard-logo {
-	margin: 20px 10px 10px 20px;
-}
-
 ul {
-	background-color: #000000;
-	border-bottom: 2px solid #36fbda;
 	list-style-type: none;
 	margin: 0px;
 	padding: 0px;
 	overflow: hidden;
-	text-align: center;
+	background-color: #414141;
 }
 
 li {
@@ -33,7 +25,7 @@ li {
 
 li a {
 	display: block;
-	padding: 8px 50px;
+	padding: 8px 10px;
 	font-size: 14px;
 	color: #fff;
 	text-transform: uppercase;
@@ -42,74 +34,22 @@ li a {
 }
 
 li a:hover {
-	background-color: #36fbda;
-	opacity: 0.9;
-	font-weight: bold;
+	background-color: #66d5f7;
+	opacity: 0.8;
+}
+
+li .logo {
+	position: relative;
+	background-color: #414141;
+	padding: 5px;
+	margin: 5px;
+	width: 200px;
+	height: 50px;
 }
 
 /* _____________________________ */
-/* MAIN PAGE COVER */
-.cover {
-	display: flex;
-	flex-wrap: wrap;
-	background-color:#000000;
-	margin: 0px;
-	padding: 0px;
-	justify-content: space-between;
-}
-
-.back {
-	width: 30%;
-	color:#fff;
-	height: 100vh;
-}
-
-.cover1 {
-	background-image: url(images/ellesse.jpg);
-	background-size: cover;
-}
-
-.cover2 {
-	color: #aba0e1;
-	text-align: center;
-	text-transform: uppercase;
-	align-items: center;
-	justify-content: center;
-}
-
-.cover2 h1 {
-	font-size: 50px;
-	margin-top: 200px;
-}
-
-.cover2 p {
-	font-size: 35px;
-	text-align: center;
-	justify-content: center;
-	font-style: italic;
-}
-
-.cover3 {
-	background-image: url(images/ellesse1.jpg);
-	background-size: cover;
-}
-
-/* _____________________________ */
-/* NEWSFEED */
-.limitednews {
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 40px;
-	margin-bottom: 10px;
-}
-
-hr {
-	width: 300px;
-	margin-bottom: 15px;
-	border: 1px solid #36fbda;
-}
-
-.news {
+/* NEWSFEED FLEXBOX*/
+.limited {
 	text-transform: uppercase;
 }
 
@@ -192,43 +132,6 @@ figcaption p {
 	background-size: cover;
 }
 
-/* NEWS FEED COLLABS */
-.collab-container {
-	background-color: blue;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: flex-start;
-}
-
-.collabs {
-	background-color: pink;
-	margin: 10px;
-	width: 250px;
-	height: 350px;
-	display: flex;
-	flex-direction: column;
-	/* justify-content: center; */
-	align-items: center;
-}
-
-
-
-
-/* _____________________________ */
-/* TOP BRANDS */
-.brands {
-	text-align: center;
-	margin-bottom: 5px;
-	text-transform: uppercase;
-}
-
-.brand {
-	width: 70px;
-	margin: 20px;
-	margin-top: -10px;
-}
-
 /* _____________________________ */
 /* FOOTER */
 footer {
@@ -271,18 +174,6 @@ footer a {
 	background-color: #000000;
 }
 
-.left h2 {
-	margin-bottom: 20px;
-}
-
-.icons {
-	width: 50px;
-	margin: 10px;
-	margin: 10px;
-	padding: 10px;
-	letter-spacing: 15px;
-}
-
 .middle {
 	background-color: #000000;
 }
@@ -306,8 +197,96 @@ footer a {
 }
 
 /* _____________________________ */
-/* GALLERY GRID */
+/* RESPONSIVE GRID */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
+#grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	padding: 20px;
+	background-color: #ffffff;
+}
+
+/* Image doesn't get bigger than its original size */
+/* img {
+	display: grid;
+	max-width: 300px;
+	height: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
+/* Gallery css with grid */
+/* *,*::before,*::after {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+} */
+.wrapper {
+	display: grid;
+	background-color: #fff;
+	width: 900px;
+	max-width: 100%;
+	height: 90vh;
+	margin: 25px auto;
+	grid-gap: 5px;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+}
+
+.box {
+	background-color: #a3fdf5;
+	/* background-size: cover; */
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.box.one {
+	grid-column: span 3;
+	grid-row: span 3;
+	background-image: url(images/couple.jpg);
+}
+
+.box.two {
+	grid-column: span 2;
+	grid-row: span 2;
+	background-image: url(images/shoes1.jpg);
+}
+
+.box.three {
+	grid-column: 1 / span 2;
+	grid-row: 4 / span 3;
+	background-image: url(images/bartsimpson.jpg);
+}
+
+.box.four {
+	grid-column: 3 / span 1;
+	grid-row: 4 / span 1;
+	background-image: url(4.jpg);
+}
+
+.box.five {
+	grid-column: 4 / span 2;
+	grid-row: 3 / span 2;
+	background-image: url(5.jpg);
+}
+
+.box.six {
+	grid-column: span 3;
+	grid-row: span 2;
+	background-image: url(6.jpg);
+}
 
 /* _____________________________ */
 /* CONTACT FORM */
@@ -316,52 +295,52 @@ footer a {
 	padding: 20px;
 	margin: 20px;
 }
-
-.form h1 {
-	font-size: 20px;
-	text-transform: uppercase;
-	margin-top: 1px;
-}
-.form p {
-	text-transform: uppercase;
-	margin-bottom: 1px;
-}
-
 input[type=text] {
 	width: 50%;
 	padding: 10px 20px;
+	margin: 10px;
 	box-sizing: border-box;
 	border-radius: 2px;
-	border: 2px solid #000000;
+	border: 1px solid #94c9c5;
 	outline: none;
 }
 
 input[type=text]:focus {
-	border: 2px solid #36fbda;
-}
-
-textarea {
-	outline: none;
-	border: 2px solid black;
-}
-
-textarea:focus {
-	border: 2px solid #36fbda;
+	border: 1px solid #678b88;
 }
 
 input[type=submit] {
-	background-color: #000000;
+	background-color: #414141;
 	border: none;
 	color: #fff;
 	padding: 16px 32px;
 	text-decoration: none;
 	margin: 4px 2px;
 	outline: none;
+	/* cursor: pointer; */
 }
 
 input[type=submit]:hover {
-	background-color: #36fbda;
+	background-color: #1b1b1b;
+}
+
+.backimg {
+	width: 100%;
+	height: 90vh;
+	background-image: url("images/neon.jpg");
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: center;
+	background-color: #b5b5ff;
 }
 
 /* _____________________________ */
-/* ABOUT US */
+/* ABOUT.HTML CSS STYLING */
+/* COVER BACKGROUND */
+.menuabout {
+	background-color: #000000;
+	border-bottom: 2px solid #36fbda;
+}
+
+
