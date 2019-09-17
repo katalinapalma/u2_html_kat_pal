@@ -346,6 +346,7 @@ footer a {
 .middle {
 	background-color: #000000;
 }
+
 .bottom {
 	background-color: #000000;
 	color: #ffffffa9;
@@ -369,15 +370,72 @@ footer a {
 /* GALLERY GRID */
 .grid-cont {
 	display: grid;
-	grid-gap: 20px;
-	grid-template-columns: auto auto;
+	grid-gap: 15px;
+	grid-template-columns: auto auto auto;
+	grid-auto-rows: 100px; 
 	margin: 10px;
+	margin-left: 15%;
 	padding: 10px;
+	width: 70%;
 }
 
 .grid-item {
 	border: 1px solid black;
 }
+
+.item1 {
+	grid-column: span 1;
+	grid-row: span 2;
+	background-image: url("");
+	background-size: cover;
+
+}
+
+.item2 {
+	grid-column: span 1;
+	grid-row: span 2;
+}
+
+.item3 {
+	grid-column: 3 / span 1;
+	grid-row: span 4;
+	background-image: url("images/gall3.jpg");
+	background-size: cover; 
+	background-position: center;
+}
+
+.item4 {
+	grid-column: span 1;
+	grid-row: 3 / span 4;
+}
+
+.item5 {
+	grid-column: 2 / span 1; 
+	grid-row: 3 / span 2;
+}
+
+.item6 {
+	grid-column: 2 / span 2;
+	grid-row: 5 / span 3;
+	background-image: url("images/giphy.gif");
+	background-size: cover;
+}
+
+.item7 {
+	grid-column: span 1;
+	grid-row:  7 / span 4;
+}
+
+.item8 {
+	grid-column: 2 / span 1;
+	grid-row: 8 / span 3;
+}
+
+.item9 {
+	grid-column: 3 / span 1;
+	grid-row: 8 / span 3;
+}
+
 
 /* _____________________________ */
 /* CONTACT FORM */
