@@ -10,11 +10,17 @@ p {
 	font-family: 'Lato', sans-serif;
 }
 
+button a {
+	text-decoration: none;
+	color: white;
+}
+
 /* _____________________________ */
 /* MAIN PAGE */
 /* NAVIGATION BAR */
 .junkyard-logo {
 	margin: 20px 10px 10px 20px;
+	width: 100px;
 }
 
 ul {
@@ -82,6 +88,20 @@ li a:hover {
 .cover2 h1 {
 	font-size: 50px;
 	margin-top: 200px;
+	/* glowing text */
+	color: #36fbda;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+/* glowing text */
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #aba0e1, 0 0 20px #aba0e1, 0 0 30px #aba0e1, 0 0 40px #aba0e1, 0 0 50px #aba0e1, 0 0 60px #aba0e1, 0 0 70px #aba0e1;
+  }
+  to {
+    text-shadow: 0 0 20px #aba0e1, 0 0 30px #aba0e1, 0 0 40px #aba0e1, 0 0 50px #aba0e1, 0 0 60px #aba0e1, 0 0 70px #aba0e1, 0 0 80px #aba0e1;
+  }
 }
 
 .cover2 p {
@@ -272,9 +292,9 @@ figcaption p {
 	border-radius: 2px;
 }
 /* more news button */
-.btn {
+/* .btn {
 	text-align: center;
-}
+} */
 
 /* .btn a:hover {
 	border: none;
@@ -296,7 +316,6 @@ button {
 	width: 400px;
 	border-radius: 5px;
 	outline: none;
-	/* transitions */
 }
 
 button:hover {
@@ -324,6 +343,7 @@ button:hover {
 /* _____________________________ */
 /* FOOTER */
 footer {
+	margin-top: 40px;
 	font-size: 14px;
 	color: #ffffff;
 }
@@ -338,6 +358,7 @@ footer a {
 	flex-flow: row wrap;
 	grid-gap: 10px;
 	justify-content: space-between;
+	border-top: 1px solid #36fbda;
 }
 
 .foot {
@@ -412,21 +433,9 @@ footer a {
 }
 
 .grid-item {
-	border: 1px solid black;
-}
-
-.itema {
-	grid-column: span 2;
-	grid-row: span 2;
-	background-image: url("images/giphy.gif");
-	background-size: cover;
-}
-
-.itemb {
-	grid-column: span 1;
-	grid-row: span 2;
-	background-image: url("images/gallb.jpg");
-	background-size: cover;
+	background-size: cover; 
+	background-position: center;
+	border-radius: 5px; 
 }
 
 .text-block {
@@ -437,95 +446,84 @@ footer a {
 	margin-top: 230px;
 }
 
-.itemb h3 {
+.text-block h3 {
 	font-size: 16px;
 	margin: 3px;
-	text-transform: capitalize;
+	text-transform: capitalize;	
 }
 
-.itemb p {
+.text-block p {
 	font-size: 13px;
 	letter-spacing: 1px;
-	font-family: 'Lato', sans-serif;
 	margin: 3px;
 }
- 
 
-/* .grid-cont .itemb {
-	position: absolute;
-	bottom: 0;
-	background: rgb(0, 0, 0);
-	background: rgba(0, 0, 0, 0.5);
-} */
+.gif1 {
+	grid-column: span 2;
+	grid-row: span 2;
+	background-image: url("images/giphy.gif");
+	background-size: cover;
+	border-radius: 5px; 
+}
+
+.gif2 {
+	grid-column: 2 / span 2;
+	grid-row: 5 / span 2;
+	background-image: url("images/globe.gif");
+}
+
+.img-1 {
+	grid-column: span 1;
+	grid-row: span 2;
+	background-image: url("images/gallb.jpg");
+	background-size: cover;
+	border-radius: 5px; 
+}
 
 .itemc {
 	grid-column: span 1;
 	grid-row: 3 / span 2;
 	background-image: url("images/2pac.jpg");
-	background-size: cover;
-	background-position: center;
 }
 
 .itemd {
 	grid-column: 2 / span 1; 
 	grid-row: 3 / span 2;
 	background-image: url("images/galld.jpg");
-	background-size: cover; 
-	background-position: center;
 }
 
 .iteme {
 	grid-column: span 1;
 	grid-row: span 2;
 	background-image: url("images/bob.jpg");
-	background-size: cover;
-	background-position: center;
-	z-index: 1;
 }
 
 .itemf {
 	grid-column: span 1;
 	grid-row:  5 / span 2;
 	background-image: url("images/836452.jpg");
-	background-size: cover;
-	background-position: center;
-}
-
-.itemg {
-	grid-column: 2 / span 2;
-	grid-row: 5 / span 2;
-	background-image: url("images/globe.gif");
-	background-size: cover;
-	background-position: center;
-
 }
 
 .itemh {
 	grid-column: span 1;
 	grid-row: 7 / span 2;
-	background-image: url("images/kappa.jpg");
-	background-size: cover;
-	background-position: center;
+	background-image: url("images/kappa.jpg"); 
 }
 
 .itemi {
 	grid-column: 2 / span 1;
 	grid-row: 7 / span 2;
 	background-image: url("images/killabee.jpg");
-	background-size: cover;
-	background-position: center;
 }
 
 .itemj {
 	grid-column: 3 / span 1;
 	grid-row: 7 / span 2;
 	background-image: url("images/jacket.jpg");
-	background-size: cover;
-	background-position: center;
 }
 
-
 /* _____________________________ */
+
 /* CONTACT FORM */
 .form {
 	border-radius: 2px;
@@ -543,7 +541,7 @@ footer a {
 	margin-bottom: 1px;
 }
 
-input[type=text] {
+input {
 	width: 50%;
 	padding: 10px 20px;
 	box-sizing: border-box;
@@ -552,16 +550,7 @@ input[type=text] {
 	outline: none;
 }
 
-input[type=email] {
-	width: 50%;
-	padding: 10px 20px;
-	box-sizing: border-box;
-	border-radius: 2px;
-	border: 2px solid #000000;
-	outline: none;
-}
-
-input[type=text]:focus {
+input:focus {
 	border: 2px solid #36fbda;
 }
 
@@ -574,7 +563,8 @@ textarea:focus {
 	border: 2px solid #36fbda;
 }
 
-input[type=submit] {
+.contact-submit {
+	width: 12%;
 	background-color: #000000;
 	border: none;
 	color: #fff;
@@ -584,12 +574,40 @@ input[type=submit] {
 	outline: none;
 }
 
-input[type=submit]:hover {
+.contact-submit:hover {
 	background-color: #36fbda;
+	-webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
 }
 
 /* _____________________________ */
 /* ABOUT US */
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px;
+	padding: 20px;
+	text-align: justify;
+}
+
+.about {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.about-top-video, .about-bottom-img {
+	width: 50%;
+}
+
+.about-top-text, .about-bottom-text {
+	width: 45%;
+}
+
+/* GRID ABOUT US */
+/* 
 #aboutus h1 {
 	text-transform: uppercase;
 	text-align: center;
@@ -611,10 +629,10 @@ input[type=submit]:hover {
 	width: 70%;
 	margin: 10px;
 	height: 400px;
-}
+} */
 
 /* videon fixa den till mitten */
-.box1 {
+/* .box1 {
 	justify-content: space-around;
 	background-color: #ffffff;
 }
@@ -637,12 +655,12 @@ input[type=submit]:hover {
 	margin-top: 0px;
 }
 
-.box4 p {
-	/* text-align: left; */
-	color: #ffffff;
+.box4 p {  */
+	/* text-align: left;  kommenterat ut innan */
+	/* color: #ffffff;
 	line-height: 2px;
 }
 
 .box4 {
 	background-color: #ffffff;
-}
+} */
