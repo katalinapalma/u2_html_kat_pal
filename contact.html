@@ -26,12 +26,16 @@
 	<div class="form">
 		<h1>Kontaktformulär</h1>
 		<form action="mailto:kata_92@hotmail.com" method="get">
+			<div class="form-input">
 			<p>Namn:</p> <br>
-			<input type="text" name="name" placeholder="För- och efternamn" required><br>
-			<p>E-postadress:</p> <br>
-			<input type="email" name="email" placeholder="Din e-postadress" required><br>
-			<p>Ämne:</p> <br>
-			<textarea placeholder="Skriv ditt meddelande här..." name="comments" cols="78" rows="10" required></textarea><br>
+				<input type="text" name="name" placeholder="För- och efternamn" required><br>
+				<p>E-postadress:</p> <br>
+				<input type="email" name="email" placeholder="Din e-postadress" required><br>
+			</div>
+			<div class="form-textarea">
+				<p>Ämne:</p> <br>
+				<textarea placeholder="Skriv ditt meddelande här..." name="comments" cols="78" rows="10" required></textarea><br>
+			</div>
 			<br>
 			<button class="contact-submit" type="submit" value="send">Skicka in</button>
 		</form>

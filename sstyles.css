@@ -344,3 +344,121 @@ input[type=submit]:hover {
 }
 
 
+/* ABOUT US GRID */
+
+/* GRID ABOUT US */
+/* 
+#aboutus h1 {
+	text-transform: uppercase;
+	text-align: center;
+	border-bottom: 2px solid #36fbda;
+	width: 200px;
+	margin-bottom: 15px;
+}
+
+#flexbox {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid palevioletred;
+	justify-content: center;
+	align-items: center;
+}
+
+.box {
+	background-color: lightseagreen;
+	width: 70%;
+	margin: 10px;
+	height: 400px;
+} */
+
+/* videon fixa den till mitten */
+/* .box1 {
+	justify-content: space-around;
+	background-color: #ffffff;
+}
+
+.box2 {
+	background-color: #f08c8c;
+}
+
+.box3 {
+	background-image: url("images/stockholm.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.box3 h2 {
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #000000;
+	color: white;
+	margin-top: 0px;
+}
+
+.box4 p {  */
+	/* text-align: left;  kommenterat ut innan */
+	/* color: #ffffff;
+	line-height: 2px;
+}
+
+.box4 {
+	background-color: #ffffff;
+} */
+
+
+
+/* GAMLA NAV OCH CSS */
+<nav>
+<div class="navigation-bar">
+	<ul>
+		<li><img class="junkyard-logo" src="images/logotype.jpg" alt="junkyard logo"></li>
+		<li><a href="./index.html"><p>Startsida</p></a></li>
+		<li><a href="./gallery.html"><p>Galleri</p></a></li>
+		<li><a href="./contact.html"><p>Kontakta oss</p></a></li>
+		<li><a href="./about.html"><p>Om oss</p></a></li>
+	</ul>
+</div>
+<span class="hamburger-menu">
+		<i class="fas fa-bars x fa-2x"></i>
+</span>
+</nav>
+
+
+
+
+.junkyard-logo {
+	margin: 20px 10px 10px 20px;
+	width: 100px;
+}
+
+ul {
+	background-color: #000000;
+	border-bottom: 2px solid #36fbda;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	text-align: center;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	padding: 8px 50px;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+}
+
+li a:hover {
+	background-color: #36fbda;
+	opacity: 0.9;
+	font-weight: bold;
+	-webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+}
